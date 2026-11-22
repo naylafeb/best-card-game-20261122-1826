@@ -18,7 +18,8 @@ const REPO_ROOT = fileURLToPath(new URL('.', import.meta.url));
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 const GAME_DIR = join(REPO_ROOT, 'game');
 const SHOTS_DIR = join(REPO_ROOT, 'screenshots');
-const DOSSIER_PATH = join(OUTPUT_DIR, 'dossier.json');
+const DOSSIER_NAME = 'dossier.json';
+const DOSSIER_PATH = join(OUTPUT_DIR, DOSSIER_NAME);
 
 // The scorer's own caps (reference/gate.json): only text_max_bytes shapes the bytes;
 // the others refuse an entry the scorer would refuse (more than 4 screenshots or one
